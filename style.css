@@ -1,0 +1,87 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Centering Content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Typography Styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.locations, .services, .address {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+/* Contact Details */
+.contact {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.contact a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+.social {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.social a {
+    color: #e4405f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
+}
