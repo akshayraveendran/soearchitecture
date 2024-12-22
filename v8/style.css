@@ -1,0 +1,48 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('assets/hero.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Navbar */
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  /* Services */
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contact Form */
+  form .form-control {
+    margin-bottom: 15px;
+  }
+  
+  /* Projects Section */
+#projects img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer Instagram Link */
+footer a {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 10px;
+  display: inline-block;
+}
+footer a:hover {
+  color: #f09433; /* Instagram gradient color */
+}
