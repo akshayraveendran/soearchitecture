@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOE Architects & Construction</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #1e3c72, #2a5298);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .hero {
+      position: relative;
+      height: 80vh;
+      background: url('https://source.unsplash.com/1920x1080/?architecture,building') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero h2 {
+      font-size: 4em;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      animation: slideIn 1.5s ease-in-out;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 50px;
+      background: #fff;
+      color: #000;
+    }
+    .services .card {
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .services .card:hover {
+      transform: scale(1.05);
+    }
+    .contact {
+      text-align: center;
+      padding: 50px;
+      background: #1e3c72;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes slideIn {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SOE Architects & Construction</h1>
+    <p>Building Dreams, Shaping Skylines</p>
+  </header>
+  <section class="hero">
+    <h2>Innovative Designs, Exceptional Quality</h2>
+  </section>
+  <section class="services">
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Expert advice for all construction projects.</p>
+    </div>
+    <div class="card">
+      <h3>Contract Works</h3>
+      <p>Delivering projects on time, every time.</p>
+    </div>
+    <div class="card">
+      <h3>Project Management</h3>
+      <p>Seamless coordination from start to finish.</p>
+    </div>
+  </section>
+  <section class="contact">
+    <h3>Get in Touch</h3>
+    <p>📍 Calicut | Dubai</p>
+    <p>📞 +91 12345 67890</p>
+    <p>📧 contact@soeconstruction.com</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 SOE Architects & Construction. All Rights Reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('Welcome to SOE Architects & Construction!');
+    });
+  </script>
+</body>
+</html>
