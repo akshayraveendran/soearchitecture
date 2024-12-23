@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-y: auto;
+    overflow-y: auto; /* Enable vertical scroll */
 }
 
 /* Background Animation */
@@ -36,7 +36,6 @@ body {
 
 /* Main Content */
 main {
-    flex-grow: 1; /* Allow main content to grow and push footer down */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,9 +43,12 @@ main {
     text-align: center;
     padding: 20px;
     color: #fff;
-    /* Ensure content is centered even if content overflows */
-    min-height: 60vh; 
+    flex: 1; /* Allow main content to take available space */
+    min-height: 60vh; /* Ensure at least 60% height */
+    margin-top: 100px; /* Add margin to push content down */
 }
+
+
 
 /* Logo Styling */
 .logo img {
@@ -128,6 +130,22 @@ footer {
     font-size: 1em;
     color: rgba(255, 255, 255, 0.8);
     padding: 10px 0;
-    margin-top: auto;
+    margin-top: auto; /* Ensures footer is pushed down to the bottom */
     animation: fadeIn 3s ease-in-out;
+}
+
+/* Responsiveness for Mobile View */
+@media (max-width: 768px) {
+    /* Main content: Allow scrolling */
+    main {
+        min-height: auto; /* Remove the fixed height to allow scrolling */
+    }
+
+    body {
+        display: block;
+    }
+
+    footer {
+        position: relative; /* Footer will appear at the bottom only when content is scrolled */
+    }
 }
