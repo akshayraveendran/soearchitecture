@@ -98,13 +98,13 @@ h1 {
 /* Social Media */
 .social {
     margin-top: 15px;
-    font-size: 1em;
+    font-size: 1.5em;
     animation: fadeIn 2.8s ease-in-out;
 }
 
 .social a {
-    color: #d62976;
-    text-decoration: none;
+    color: #ff2800;
+    text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s ease;
 }
