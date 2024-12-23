@@ -79,7 +79,7 @@ h1 {
     animation: fadeIn 2.2s ease-in-out;
 }
 
-.locations, .services, .address {
+.locations, .address {
     font-size: 1.2em;
     margin-bottom: 5px;
     opacity: 0.9;
@@ -104,23 +104,75 @@ h1 {
     color: #fff;
 }
 
-/* Social Media */
-.social {
-    margin-top: 15px;
-    font-size: 1.5em;
-    animation: fadeIn 2.8s ease-in-out;
+
+/* CTA Button Styling with Icon */
+.cta-button {
+    margin-top: 20px;
+    animation: fadeIn 2.4s ease-in-out;
 }
 
-.social a {
-    color: #ff4d00;
-    text-decoration: underline;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.social a:hover {
+.cta-button a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25D366; /* WhatsApp Green */
     color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
 }
+
+.cta-button a:hover {
+    background: #128C7E; /* Darker WhatsApp Green */
+    transform: scale(1.05);
+}
+
+.cta-button .whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes the black icon white */
+}
+
+
+/* Instagram CTA Button Styles */
+.cta-button.instagram {
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cta-button.instagram a {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(45deg, #833AB4, #E1306C, #FD1D1D, #FCAF45);
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button.instagram img.cta-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Makes the black icon white */
+}
+
+.cta-button.instagram a:hover {
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    transform: translateY(-3px);
+}
+
 
 /* Footer */
 footer {
