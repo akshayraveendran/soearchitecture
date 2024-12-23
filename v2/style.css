@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
 }
 
@@ -70,7 +70,7 @@ h1 {
 }
 
 .locations, .services, .address {
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 5px;
     opacity: 0.9;
     animation: fadeIn 2.4s ease-in-out;
@@ -79,7 +79,7 @@ h1 {
 /* Contact Details */
 .contact {
     margin-top: 20px;
-    font-size: 1em;
+    font-size: 1.5em;
     animation: fadeIn 2.6s ease-in-out;
 }
 
@@ -97,13 +97,13 @@ h1 {
 /* Social Media */
 .social {
     margin-top: 15px;
-    font-size: 1em;
+    font-size: 1.5em;
     animation: fadeIn 2.8s ease-in-out;
 }
 
 .social a {
-    color: #ff8a80;
-    text-decoration: none;
+    color: #ff4d00;
+    text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -118,7 +118,7 @@ footer {
     bottom: 10px;
     width: 100%;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
     color: rgba(255, 255, 255, 0.8);
     animation: fadeIn 3s ease-in-out;
 }
@@ -128,3 +128,6 @@ footer {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
 }
+
+
+
