@@ -38,7 +38,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Vertically center content */
     align-items: center;
     text-align: center;
     padding: 20px;
@@ -130,6 +130,22 @@ footer {
     padding: 10px 0;
     margin-top: auto; /* Ensures footer is pushed down to the bottom */
     animation: fadeIn 3s ease-in-out;
+}
+
+/* Responsiveness for Mobile View */
+@media (max-width: 768px) {
+    /* Main content: Allow scrolling */
+    main {
+        min-height: auto; /* Remove the fixed height to allow scrolling */
+    }
+
+    body {
+        display: block;
+    }
+
+    footer {
+        position: relative; /* Footer will appear at the bottom only when content is scrolled */
+    }
 }
 
 /* Media Queries for Mobile Devices */
