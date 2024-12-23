@@ -1,0 +1,130 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+/* Body as a Flexbox Container */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Background Animation */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Typography Styling */
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-style: italic;
+    animation: fadeIn 2.2s ease-in-out;
+}
+
+.locations, .services, .address {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    opacity: 0.9;
+    animation: fadeIn 2.4s ease-in-out;
+}
+
+/* Contact Details */
+.contact {
+    margin-top: 20px;
+    font-size: 1.5em;
+    animation: fadeIn 2.6s ease-in-out;
+}
+
+.contact a {
+    color: #ffdf6c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+
+/* Social Media */
+.social {
+    margin-top: 15px;
+    font-size: 1.7em;
+    animation: fadeIn 2.8s ease-in-out;
+}
+
+.social a {
+    color: #ff4d00;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    margin-top: auto;
+    animation: fadeIn 3s ease-in-out;
+}
