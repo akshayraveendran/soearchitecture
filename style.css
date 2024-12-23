@@ -48,8 +48,6 @@ main {
     margin-top: 100px; /* Add margin to push content down */
 }
 
-
-
 /* Logo Styling */
 .logo img {
     width: 150px;
@@ -134,18 +132,39 @@ footer {
     animation: fadeIn 3s ease-in-out;
 }
 
-/* Responsiveness for Mobile View */
-@media (max-width: 768px) {
-    /* Main content: Allow scrolling */
-    main {
-        min-height: auto; /* Remove the fixed height to allow scrolling */
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduce font size for the headline */
     }
 
-    body {
-        display: block;
+    .tagline {
+        font-size: 1.2em; /* Reduce font size for the tagline */
     }
 
-    footer {
-        position: relative; /* Footer will appear at the bottom only when content is scrolled */
+    .locations, .services, .address {
+        font-size: 1em; /* Reduce font size for locations, services, and address */
+    }
+
+    .contact, .social {
+        font-size: 1.2em; /* Adjust font size for contact and social sections */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Further reduce font size on smaller screens */
+    }
+
+    .tagline {
+        font-size: 1em; /* Adjust tagline font size */
+    }
+
+    .locations, .services, .address {
+        font-size: 0.9em; /* Reduce font size for smaller screens */
+    }
+
+    .contact, .social {
+        font-size: 1em; /* Adjust font size for contact and social sections */
     }
 }
