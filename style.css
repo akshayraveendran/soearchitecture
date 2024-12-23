@@ -50,7 +50,7 @@ main {
 
 /* Logo Styling */
 .logo img {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-bottom: 20px;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
