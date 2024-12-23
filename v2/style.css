@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
 }
 
@@ -54,8 +54,7 @@ main {
 
 /* Typography Styling */
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
@@ -98,7 +97,7 @@ h1 {
 /* Social Media */
 .social {
     margin-top: 15px;
-    font-size: 2em;
+    font-size: 1.7em;
     animation: fadeIn 2.8s ease-in-out;
 }
 
@@ -129,3 +128,6 @@ footer {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
 }
+
+
+
